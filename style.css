@@ -1,14 +1,14 @@
 body {
 	width: 100%;
 	height: 100%;
-	color: #999900;
+	color: #000000;
 }
 
 h1 {
 	font-size: 38px;
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: 1.5px;
-    text-decoration: underline;
+    text-decoration:solid;
     margin-bottom: 10px;
 }
 
@@ -17,13 +17,13 @@ h1 {
     font-size: 28px;
     font-family: 'Archivo Narrow', sans-serif;
 	margin-bottom: 15px;
-    animation: fadein 4s;
+    animation: fadein 2s;
 }
 
 #app-container {
 	width: 100%;
 	height: 100vh;
-	background-color: #647383;
+	background-color: rgb(137, 231, 243);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -39,6 +39,7 @@ textarea {
 	min-height: 100px;
 	min-width: 200px;
 	margin-bottom: 8px;
+
 }
 
 .error-text {
@@ -47,7 +48,7 @@ textarea {
 
 button {
 	padding: 15px;
-	color: #4ECDC4;
+	color: hsl(176, 71%, 68%);
 	background-color: #647383;
 	border: 1px solid #4ECDC4;
 }
@@ -65,4 +66,9 @@ button:focus {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+#foot{
+    position: fixed;
+    align-self: center;
+    color: black;
 }
