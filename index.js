@@ -1,4 +1,4 @@
-// Do any page setup, like modifying placeholder text
+//Do any page setup, like modifying placeholder text
 function init() {
 	var textarea = document.getElementsByTagName('textarea')[0];
 	textarea.placeholder = textarea.placeholder.replace(/\\n/g, '\n');
@@ -13,7 +13,7 @@ function getRandomTeam(arr, groupSize) {
 		// If we get undefined, out of choices.  Need to remove the last "&"
 		// that we appended and break out of loop.
 		if (randomPerson === undefined) {
-			var trailingAmpersandIndex = currentTeam.lastIndexOf(' &');
+			var trailingAmpersandIndex = currentTeam.lastIndexOf(' ,');
 			currentTeam = currentTeam.substring(0, trailingAmpersandIndex);
 			break; 
 		}
@@ -24,7 +24,7 @@ function getRandomTeam(arr, groupSize) {
 
 		// Append an & if we're on any but the last group member 
 		var stringToAppend = randomPerson;
-		if (i < groupSize - 1) { stringToAppend += ' & '; }
+		if (i < groupSize - 1) { stringToAppend += ' ,'; }
 		currentTeam += stringToAppend;
 	}
 	return currentTeam;
